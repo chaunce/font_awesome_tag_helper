@@ -1,3 +1,8 @@
 = FontAwesomeTagHelper
 
-This project rocks and uses MIT-LICENSE.
+tag helper methods for Font Awesome icons
+
+Usage:
+
+<%= icon_tag :search %>
+#=> <i class"icon-search"></i>
