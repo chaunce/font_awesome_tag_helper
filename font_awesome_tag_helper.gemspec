@@ -7,11 +7,11 @@ require "font_awesome_tag_helper/version"
 Gem::Specification.new do |s|
   s.name        = "font_awesome_tag_helper"
   s.version     = FontAwesomeTagHelper::VERSION
-  s.authors     = ["TODO: Your name"]
-  s.email       = ["TODO: Your email"]
-  s.homepage    = "TODO"
-  s.summary     = "TODO: Summary of FontAwesomeTagHelper."
-  s.description = "TODO: Description of FontAwesomeTagHelper."
+  s.authors     = ["chaunce"]
+  s.email       = ["chaunce.slc@gmail.com"]
+  s.homepage    = ""
+  s.summary     = "Adds Font Awesome tag helpers."
+  s.description = "Adds Font Awesome tag helpers."
 
   s.files = Dir["{app,config,db,lib}/**/*"] + ["MIT-LICENSE", "Rakefile", "README.rdoc"]
   s.test_files = Dir["test/**/*"]
