@@ -1,7 +1,7 @@
 require 'test_helper'
 
 class FontAwesomeTagHelperTest < ActiveSupport::TestCase
-  test "truth" do
-    assert_kind_of Module, FontAwesomeTagHelper
+  test "module_loaded" do
+    assert ActionView::Helpers.included_modules.include? FontAwesomeTagHelper
   end
 end
