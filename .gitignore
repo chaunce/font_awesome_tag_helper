@@ -6,4 +6,5 @@ test/dummy/log/*.log
 test/dummy/tmp/
 test/dummy/.sass-cache
 Gemfile.lock
+font_awesome_tag_helper-*.gem
 .rvmrc
