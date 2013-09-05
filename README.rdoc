@@ -4,7 +4,7 @@ tag helper methods for Font Awesome icons
 
 == Usage
 
-  icon_tag :icon_name, options
+  icon_tag :icon_name, options_hash
 
 == Examples
 
