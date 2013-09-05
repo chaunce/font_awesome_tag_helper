@@ -4,19 +4,25 @@ tag helper methods for Font Awesome icons
 
 == Usage
 
-+icon_tag :icon_name, options+
+icon_tag :icon_name, options
 
 == Examples
 
-+icon_tag :search, { id: "search", name: "search_icon" }+ produces:
+  icon_tag :search, { id: "search", name: "search_icon" }
+
+produces:
 
   <i id="search" name="search_icon", class="icon-search"></i>
 
-+icon_tag :search+ produces:
+  icon_tag :search
+
+produces:
 
   <i class"icon-search"></i>
 
-+icon_tag :search+ produces:
+  icon_tag :search
+
+produces:
 
   <i class"icon-search"></i>
 
@@ -27,9 +33,9 @@ tag helper methods for Font Awesome icons
 - +size+ increases the size of the icon.  Adds +icon-2x+, +icon-3x+ or +icon-4x+ to the class when the value is set to a valid multiplayer +2+, +3+ or +4+.  Accepts an integer.
 - +large+ increases the size of the icon.  Adds +icon-large+ to the class when the value is set to +true+.  Accepts a boolean.
 - +border+ includes a border around the icon.  Adds +icon-border+ to the class when the value is set to +true+.  Accepts a boolean.
-- +pull+ pulls the icon to the left or right.  Adds +pull-left+ or +pull-right+ to the class when the value is set to +left+ or +right+.  Accepts a string.
-- +spin+ spins the icon.  Adds +icon-spin+ to the class when the value is set to +true+.  Accepts a boolean.
+- +pull+ orientates the icon to the left or right.  Adds +pull-left+ or +pull-right+ to the class when the value is set to +left+ or +right+.  Accepts a string.
+- +spin+ animates the icon.  Adds +icon-spin+ to the class when the value is set to +true+.  Accepts a boolean.
 - +li+ or +list+ formats the icon for a list.  Adds +icon-li+ to the class when the value is set to +true+.  Accepts a boolean.
 - +width+ increases the width to the width of the parent element.  Adds +icon-fixed-width+ to the class when the value is set to +fixed+.  Accepts a string.
-- +rotate+ rotes the icon the specified number of degrees.  Adds +icon-rotate-90+, +icon-rotate-180+ or +icon-rotate-270+ to the class when the value is set to +90+, +180+ or +270+.  Accepts an integer.
+- +rotate+ turns the icon the specified number of degrees.  Adds +icon-rotate-90+, +icon-rotate-180+ or +icon-rotate-270+ to the class when the value is set to +90+, +180+ or +270+.  Accepts an integer.
 - +width+ flips the icon.  Adds +icon-flip-horizontal+ or +icon-flip-vertical+ to the class when the value is set to +horizontal+ or +vertical+.  Accepts a string.
