@@ -8,27 +8,27 @@ tag helper methods for Font Awesome icons
 
 == Examples
 
+  icon_tag :search
+
+produces:
+
+  <i class"icon-search"></i>
+
+--
+
   icon_tag :search, { id: "search", name: "search_icon" }
 
 produces:
 
-  <i id="search" name="search_icon", class="icon-search"></i>
+  <i id="search" name="search_icon" class="icon-search"></i>
 
 --
 
-  icon_tag :search
+  icon_tag :search, { id: "search", name: "search_icon", large: true, pull: "right" }
 
 produces:
 
-  <i class"icon-search"></i>
-
---
-
-  icon_tag :search
-
-produces:
-
-  <i class"icon-search"></i>
+  <i id="search" name="search_icon" class"icon-search icon-large pull-right"></i>
 
 == Available Options
 
