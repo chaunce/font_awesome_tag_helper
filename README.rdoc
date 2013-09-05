@@ -14,11 +14,15 @@ produces:
 
   <i id="search" name="search_icon", class="icon-search"></i>
 
+--
+
   icon_tag :search
 
 produces:
 
   <i class"icon-search"></i>
+
+--
 
   icon_tag :search
 
