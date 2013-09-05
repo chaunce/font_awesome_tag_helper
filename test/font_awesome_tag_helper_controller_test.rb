@@ -127,7 +127,7 @@ class FontAwesomeTagHelperControllerTest < ActionController::TestCase
     assert_tag :tag => 'i', :children => { :count => 0 }
     assert_tag :tag => 'i', :content => nil
   end
-  
+
   test "generate_tag_with_invalid_options" do
     tag = "search"
     options = { id: "search-box", name: "search", popup: true, flash: "Yes!", hidden: "okay" }
@@ -140,7 +140,7 @@ class FontAwesomeTagHelperControllerTest < ActionController::TestCase
     assert_tag :tag => 'i', :children => { :count => 0 }
     assert_tag :tag => 'i', :content => nil
   end
-  
+
   test "generate_invalid_tag" do
     tag = "search-invalid"
     options = { id: "search-invalid-box", name: "search-invalid" }
