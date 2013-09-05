@@ -16,4 +16,5 @@ gem "jquery-rails"
 # To use debugger
 # gem 'ruby-debug19', :require => 'ruby-debug'
 
-gem 'font-awesome-rails'
+gem "sqlite3"
+gem "font-awesome-rails"
