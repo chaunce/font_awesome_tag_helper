@@ -1,20 +1,29 @@
-$:.push File.expand_path("../lib", __FILE__)
+lib = File.expand_path('../lib/', __FILE__)
+$:.unshift lib unless $:.include?(lib)
 
-# Maintain your gem's version:
 require "font_awesome_tag_helper/version"
+require 'date'
 
-# Describe your gem and declare its dependencies:
 Gem::Specification.new do |s|
   s.name        = "font_awesome_tag_helper"
-  s.version     = FontAwesomeTagHelper::VERSION
-  s.authors     = ["chaunce"]
-  s.email       = ["chaunce.slc@gmail.com"]
-  s.homepage    = ""
+  s.version     = ExpiringAssetLinks::Version.string
+  s.date        = Date.today
+  
   s.summary     = "Adds Font Awesome tag helpers."
   s.description = "Adds Font Awesome tag helpers."
+  s.license     = 'MIT'
+  
+  s.author      = "chaunce"
+  s.email       = "chaunce.slc@gmail.com"
+  s.homepage    = "http://github.com/chaunce/font_awesome_tag_helper"
+  
+  s.has_rdoc = false
+  s.rdoc_options = ['--line-numbers', '--inline-source', '--main', 'README.rdoc']
+  
+  s.require_paths = ['lib']
 
-  s.files = Dir["{app,config,db,lib}/**/*"] + ["MIT-LICENSE", "Rakefile", "README.rdoc"]
-  s.test_files = Dir["test/**/*"]
+  s.files       = `git ls-files`.split("\n")
+  s.test_files  = `git ls-files -- {test,spec,features}/*`.split("\n")
 
   s.add_dependency "rails"
   s.add_dependency "font-awesome-rails"
